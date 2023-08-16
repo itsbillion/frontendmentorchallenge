@@ -1,0 +1,129 @@
+body {
+    background-color: hsl(30, 38%, 92%);
+    font-size: 14px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 550px;
+    display: flex;
+    overflow: hidden;
+    border: 1px solid transparent;
+    border-radius: 10px;
+}
+
+.image {
+    flex: 1;
+    height: inherit;
+}
+
+.image img {
+    height: 100%;
+    max-width: 100%;
+}
+
+.info {
+    flex: 1;
+    height: inherit;
+    padding: 20px;
+    background-color: white;
+    color: hsl(228, 12%, 48%);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.info p {
+    font-family: "Montserrat", serif;
+}
+
+.details{
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+}
+
+.perfume{
+    font-size: 0.65rem;
+    line-height: 0.05rem;
+    letter-spacing: 0.5rem;
+}
+
+.info h2 {
+    font-family: "Fraunces", sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: hsl(212, 21%, 14%);
+}
+
+.new-price {
+    font-family: "Fraunces", sans-serif;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: #3c8067;
+}
+
+.old-price {
+    font-size: 0.65rem;
+    text-decoration: line-through;
+    position: relative;
+    bottom: 7.5px;
+}
+
+button {
+    border: 1px solid transparent;
+    color: white;
+    font-size: 0.75rem;
+    font-family: "Montserrat", serif;
+    background-color: #3c8067;
+    padding: 5px 20px;
+    width: 100%;
+    border-radius: 5px;
+    height: 3rem;
+    white-space: pre;
+    box-sizing: border-box;
+}
+
+button img {
+    height: 0.6rem;
+}
+
+button:hover {
+    background-color: #173127;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 2000px) {
+    :root {
+        --font-size-base: 50px;
+    }
+}
+@media only screen and (max-width: 490px) {
+    .container {
+        max-width: 300px;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        border: 1px solid transparent;
+        border-radius: 10px;
+        margin: 0;
+        padding: 0;
+    }
+    .image {
+        margin-bottom: -5px;
+    }
+    .image img {
+        max-height: 250px;
+        width: 100%;
+        object-fit: cover;
+        margin-bottom: -1px;
+    }
+    .info {
+        display: block;
+    }
+}
